@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  background: linear-gradient(120deg, #495edb 0%, #fa8c16 100%);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #232946;
+}
+.sidebar {
+  position: fixed; left: 0; top: 0;
+  height: 100vh; width: 60px; background: #252651e8;
+  z-index: 200; display: flex; flex-direction: column; align-items: center; padding-top: 14px;
+  box-shadow: 2px 0 14px #25265166;
+}
+.side-logo {
+  color: #fa8c16; font-size: 2.05em; font-weight: bold;
+  background: #fff; width: 38px; height: 38px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom:15px;
+}
+.sidebar nav { display: flex; flex-direction: column; gap: 17px; }
+.side-btn {
+  border: none; background: transparent; color: #fff;
+  font-size: 1.33em; cursor: pointer; padding: 10px 0; border-radius: 8px; transition: background .22s, color 0.22s;
+}
+.side-btn.active, .side-btn:hover { background: #fa8c16; color: #fff; }
+main { margin-left: 60px; min-height: 100vh;}
+.tab-section { display: none; padding: 60px 8vw 38px; animation: fadeInTab .7s;}
+.tab-section.show-section { display: block;}
+@keyframes fadeInTab { from { opacity: 0; transform: translateY(44px);} to { opacity: 1; transform: none; } }
+.hero-split {
+  display: flex; gap: 40px; align-items: center; min-height: 70vh; justify-content: center;
+}
+.pro-photo { width: 180px; height: 180px; border-radius: 50%; border: 7px solid #fff; box-shadow: 0 0 40px #25265140; }
+.hero-split h1 { margin-bottom: 9px; }
+.hero-split .highlight { color: #fa8c16; font-weight: 700; }
+.typed { font-size:1.25em; color: #495edb; background: #fff; padding: 8px 20px; border-radius: 7px; border-left: 4px solid #fa8c16;}
+.btn-row { margin-top: 22px;}
+.main-btn {
+  background: linear-gradient(90deg, #495edb, #fa8c16 80%);
+  color: #fff; font-weight: 600; border: none; border-radius: 22px; padding: 13px 28px;
+  font-size: 1.12em; margin-right: 18px; box-shadow: 0 4px 16px #25265140; cursor: pointer;
+  transition: background 0.22s, box-shadow 0.22s, color 0.22s;
+}
+.main-btn.alt { background: #fff; color: #232946; border: 2px solid #495edb; }
+.main-btn:hover { background:#fa8c16; color: #fffde4;}
+.chips { display: flex; gap: 13px; flex-wrap: wrap; margin: 18px 0;}
+.chips span { background: #fa8c1618; color: #495edb; border-radius: 8px; padding: 7px 19px; font-weight: 600;}
+.section-icon { font-size: 1.16em; margin-right: 5px; }
+.tab-menu { display:flex;gap:10px;margin:0 0 24px;}
+.tab-link { background:#fff;color:#495edb; border:none; border-radius:7px; font-weight:700; padding:8px 20px; cursor:pointer; font-size:1.06em;}
+.tab-link.tab-active, .tab-link:hover { background:#fa8c16; color:#fff; }
+.tab-content { display:none; gap:10px;}
+.tab-content.show-tab { display:flex; flex-wrap:wrap;}
+.skill-badge { background: linear-gradient(90deg,#495edb,#fa8c16b5); color: #fff;
+  padding: 7px 21px; font-size:1em; border-radius:9px; margin:7px 9px 7px 0; font-weight:600; box-shadow:0 1.5px 7px #25265122;}
+.multi-tabs { display:flex; gap:11px; margin:18px 0 18px 0;}
+.multi-tab-link { color: #495edb; background: #fff; border:none; border-radius:7px; padding:7px 16px; font-weight:600; cursor:pointer; }
+.multi-tab-link.mt-active, .multi-tab-link:hover { background:#fa8c16; color:#fff; }
+.multi-tab-content { display:none; }
+.multi-tab-content.mt-show { display:block; }
+.gallery-row { display:flex; gap:18px; margin-top:16px; flex-wrap:wrap;}
+.gallery-row img { width:120px; height:120px; border-radius:18px; object-fit:cover; border:3px solid #fff; box-shadow: 0 2px 14px #25265144;}
+.contact-box { display:flex; flex-direction:column; gap:11px; max-width:340px; margin:0 auto;}
+.contact-box input, .contact-box textarea { padding: 9px 12px; border-radius:8px; border:1.5px solid #fa8c1655; }
+.social-row { display:flex; gap:18px; margin-top:13px; justify-content:center;}
+.soc-btn { background:#495edb; color: #fff; border-radius:7px; padding:8px 18px; font-weight:bold; text-decoration:none;}
+.soc-btn.mail { background:#fa8c16;}
+.soc-btn.github:hover { background:#5865f2;}
+.soc-btn.mail:hover { background:#d76f17;}
+footer { text-align:center; background:#252651f4; color:#fff; font-size:1.08em; padding:18px; margin-top:33px; border-radius:13px 13px 0 0;}
+/* Responsive */
+@media screen and (max-width: 700px){
+  .hero-split{flex-direction:column; gap:20px;}
+  main{margin-left:60px;}
+  .tab-section{padding:50px 3vw 32px;}
+}

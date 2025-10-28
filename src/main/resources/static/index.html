@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gyanesh Singh | Pro Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Sidebar Navigation with Tab Buttons -->
+  <aside class="sidebar">
+    <div class="side-logo">G</div>
+    <nav>
+      <button class="side-btn active" data-tab="home" title="Home">🏠</button>
+      <button class="side-btn" data-tab="about" title="About Me">🙋‍♂</button>
+      <button class="side-btn" data-tab="skills" title="Skills">💻</button>
+      <button class="side-btn" data-tab="projects" title="Projects">⭐</button>
+      <button class="side-btn" data-tab="gallery" title="Gallery">🖼</button>
+      <button class="side-btn" data-tab="contact" title="Contact">✉</button>
+    </nav>
+  </aside>
+  
+  <!-- Main Content Sections as Tabs -->
+  <main>
+    <section id="home" class="tab-section show-section">
+      <div class="hero-split">
+        <img src="assets/PHOTO.jpg" class="pro-photo" alt="Gyanesh Singh" />
+        <div>
+          <h1>Hi, I'm <span class="highlight">Gyanesh Singh</span></h1>
+          <h2 class="typed">Java Developer, Innovator, Problem-Solver</h2>
+          <div class="btn-row">
+            <a class="main-btn" href="#contact">Let's Connect</a>
+            <a class="main-btn alt" href="assets/resume.pdf" download>Download Resume</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="about" class="tab-section">
+      <h2><span class="section-icon">🙋‍♂</span> About Me</h2>
+      <div class="chips">
+        <span>🌟 Passionate Coder</span>
+        <span>🌏 English & Hindi</span>
+        <span>🏏 Cricket Lover</span>
+        <span>🧠 Fast Learner</span>
+      </div>
+      <p>
+        Computer Science undergraduate at KIIT. Deep experience with Java, Spring Boot, Web and AI. Enthusiastic about building useful, beautiful, and accessible products—all with a positive attitude and a drive to improve teamwork!
+      </p>
+    </section>
+    
+    <section id="skills" class="tab-section">
+      <h2><span class="section-icon">💻</span> Skills</h2>
+      <div class="tab-menu">
+        <button class="tab-link tab-active" data-tab="prog">Programming</button>
+        <button class="tab-link" data-tab="webd">Web</button>
+        <button class="tab-link" data-tab="tools">Tools</button>
+      </div>
+      <div class="tab-content tab-prog show-tab">
+        <div class="skill-badge">Java</div>
+        <div class="skill-badge">Python</div>
+        <div class="skill-badge">C</div>
+        <div class="skill-badge">SQL</div>
+      </div>
+      <div class="tab-content tab-webd">
+        <div class="skill-badge">HTML</div>
+        <div class="skill-badge">CSS</div>
+        <div class="skill-badge">Bootstrap</div>
+        <div class="skill-badge">Responsive Design</div>
+      </div>
+      <div class="tab-content tab-tools">
+        <div class="skill-badge">VS Code</div>
+        <div class="skill-badge">Git & GitHub</div>
+        <div class="skill-badge">MS Office</div>
+        <div class="skill-badge">Photoshop</div>
+        <div class="skill-badge">AutoCAD</div>
+      </div>
+    </section>
+    
+    <section id="projects" class="tab-section">
+      <h2><span class="section-icon">⭐</span> Projects</h2>
+      <div class="multi-tabs">
+        <button class="multi-tab-link mt-active" data-tab="notesync">NoteSync</button>
+        <button class="multi-tab-link" data-tab="trucktrack">Truck Track</button>
+      </div>
+      <div class="multi-tab-content mt-notesync mt-show">
+        <h3>NoteSync</h3>
+        <p>
+          Secure notes management web-app with user login, built using Java, JDBC, and MySQL. Modern UI & responsive features.
+        </p>
+      </div>
+      <div class="multi-tab-content mt-trucktrack">
+        <h3>Truck Track System</h3>
+        <p>
+          Fleet management dashboard: add, update, and track trucks. Java + MySQL backend and robust CRUD systems.
+        </p>
+      </div>
+    </section>
+    
+    <section id="gallery" class="tab-section">
+      <h2><span class="section-icon">🖼</span> Gallery</h2>
+      <div class="gallery-row">
+        <img src="assets/PHOTO.jpg" alt="Profile" />
+        <img src="assets/1000071202.jpg" alt="Sample2" />
+        <img src="assets/1000071202.jpg" alt="Sample3" />
+      </div>
+    </section>
+    
+    <section id="contact" class="tab-section">
+      <h2><span class="section-icon">✉</span> Contact</h2>
+      <form method="POST" action="/api/contact" class="contact-box">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your message..."></textarea>
+        <button class="main-btn">Send</button>
+      </form>
+      <div class="social-row">
+        <a href="mailto:gyaneshsingh1740@gmail.com" class="soc-btn mail" target="_blank">Email</a>
+        <a href="https://github.com/gyanesh1740" class="soc-btn github" target="_blank">GitHub</a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>
+      © 2025 Gyanesh Singh &bull; Professional Portfolio &bull; Crafted with <span style="color:#fa8c16;">&#10084;</span>
+    </p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
