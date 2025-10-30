@@ -12,6 +12,19 @@ document.querySelectorAll('.side-btn').forEach(btn => {
   };
 });
 
+// Tab-menu switching in educations
+document.querySelectorAll('.tab-link').forEach(tabBtn => {
+  tabBtn.onclick = () => {
+    document.querySelectorAll('.tab-link').forEach(b=>b.classList.remove('tab-active'));
+    tabBtn.classList.add('tab-active');
+    let tabTarget = tabBtn.getAttribute('data-tab');
+    document.querySelectorAll('.tab-content').forEach(tab => {
+      tab.classList.remove('show-tab');
+      if(tab.classList.contains('tab-'+tabTarget)) tab.classList.add('show-tab');
+    });
+  };
+});
+
 // Tab-menu switching in skills
 document.querySelectorAll('.tab-link').forEach(tabBtn => {
   tabBtn.onclick = () => {
