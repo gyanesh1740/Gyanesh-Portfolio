@@ -31,7 +31,11 @@ main { margin-left: 60px; min-height: 100vh;}
 .hero-split h1 { margin-bottom: 9px; }
 .hero-split .highlight { color: #fa8c16; font-weight: 700; }
 .typed { font-size:1.25em; color: #495edb; background: #fff; padding: 8px 20px; border-radius: 7px; border-left: 4px solid #fa8c16;}
-.btn-row { margin-top: 22px;}
+.btn-row {
+  display: flex;
+  gap: 15px;
+align-items: center;
+}
 .main-btn {
   background: linear-gradient(90deg, #495edb, #fa8c16 80%);
   color: #fff; font-weight: 600; border: none; border-radius: 22px; padding: 13px 28px;
@@ -80,3 +84,4 @@ footer { text-align:center; background:#252651f4; color:#fff; font-size:1.08em; 
   main{margin-left:60px;}
   .tab-section{padding:50px 3vw 32px;}
 }
+
